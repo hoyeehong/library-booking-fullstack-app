@@ -1,0 +1,69 @@
+html {
+  font-family: "Urbanist", sans-serif;
+}
+
+header {
+  background-color: #005e58; /*#357867;*/
+  text-align: center;
+  margin: auto -16px;
+  padding: 15px 50px;
+}
+
+header h1 {
+  color: #fff;
+  /* font-weight: 50; */
+}
+
+.h1-submission {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: -0.019em;
+  color: #445072;
+}
+
+body {
+  background: #eee;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+form {
+  position: relative;
+  width: 70%;
+  margin: 10px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 7px;
+}
+
+.form-submission {
+  position: relative;
+  width: 70%;
+  margin: 10px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 7px;
+}
+
+.form-grouping {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 1.5em;
+  /* line-height: 1; */
+}
+
+button {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 125, 50);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}

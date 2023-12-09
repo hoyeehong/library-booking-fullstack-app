@@ -1,0 +1,19 @@
+{
+  "scenarios": [
+    {
+      "test": "Test_Case_01_Happy_Flow",
+      "status": 200,
+      "message": "Successfully saved new booking information",
+      "data": {
+        "name": "tester1",
+        "nricFin": "S1234567A",
+        "pod": "Pod 1",
+        "bookingTiming": "12pm",
+        "bookingDuration": "30mins",
+        "podLocation": "Alpha Room",
+        "chosenDate": "11/12/2023",
+        "booking_id": "booking1"
+      }
+    }
+  ]
+}

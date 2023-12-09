@@ -1,0 +1,79 @@
+{
+  "scenarios": [
+    {
+      "test": "Test_Case_02_Unhappy_Flow",
+      "status": 400,
+      "message": "Booking validation failed: name: Name is required",
+      "data": {
+        "name": "",
+        "nricFin": "S1234567A",
+        "pod": "Pod 1",
+        "bookingTiming": "12pm",
+        "bookingDuration": "30mins",
+        "podLocation": "Alpha Room",
+        "chosenDate": "11/12/2023",
+        "booking_id": "booking1"
+      }
+    },
+    {
+      "test": "Test_Case_03_Unhappy_Flow",
+      "status": 400,
+      "message": "Booking validation failed: nricFin: NRIC/FIN is required",
+      "data": {
+        "name": "tester3",
+        "nricFin": "",
+        "pod": "Pod 1",
+        "bookingTiming": "12pm",
+        "bookingDuration": "30mins",
+        "podLocation": "Alpha Room",
+        "chosenDate": "11/12/2023",
+        "booking_id": "booking1"
+      }
+    },
+    {
+      "test": "Test_Case_04_Unhappy_Flow",
+      "status": 400,
+      "message": "Booking validation failed: pod: Pod is required",
+      "data": {
+        "name": "tester4",
+        "nricFin": "S1234567B",
+        "pod": "",
+        "bookingTiming": "12pm",
+        "bookingDuration": "30mins",
+        "podLocation": "Alpha Room",
+        "chosenDate": "11/12/2023",
+        "booking_id": "booking1"
+      }
+    },
+    {
+      "test": "Test_Case_05_Unhappy_Flow",
+      "status": 400,
+      "message": "Booking validation failed: bookingTiming: Booking timing is required",
+      "data": {
+        "name": "tester5",
+        "nricFin": "S1234567C",
+        "pod": "Pod 1",
+        "bookingTiming": "",
+        "bookingDuration": "30mins",
+        "podLocation": "Alpha Room",
+        "chosenDate": "11/12/2023",
+        "booking_id": "booking1"
+      }
+    },
+    {
+      "test": "Test_Case_06_Unhappy_Flow",
+      "status": 400,
+      "message": "Booking validation failed: bookingDuration: Booking duration is required",
+      "data": {
+        "name": "tester6",
+        "nricFin": "S1234567D",
+        "pod": "Pod 1",
+        "bookingTiming": "12pm",
+        "bookingDuration": "",
+        "podLocation": "Alpha Room",
+        "chosenDate": "11/12/2023",
+        "booking_id": "booking1"
+      }
+    }
+  ]
+}
