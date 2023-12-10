@@ -20,7 +20,7 @@ export default function BookingFormSubmission() {
 
     axios({
       method: "post",
-      url: `${process.env.REACT_APP_BOOKING_BACKEND_SERVICES}`, //"http://localhost:3001/booking"
+      url: `${process.env.REACT_APP_BACKEND_API}`, //"http://localhost:3001/booking"
       data: item,
     }).then(function (response, error) {
       if (!response.status === 200) console.log(error);
