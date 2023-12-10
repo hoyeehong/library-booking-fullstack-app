@@ -1,0 +1,23 @@
+version: "3.4"
+
+services:
+  backend-api:
+    image: backend-api
+    build:
+      context: backend
+      dockerfile: ./Dockerfile
+    environment:
+      ENDPOINT: https://library-booking-backend-services.onrender.com
+      MONGO_URI: mongodb+srv://restricted_user3:nDthsgo2w1W1Bssf@cluster0.w8ogeew.mongodb.net/bookingDB?retryWrites=true&w=majority
+    ports:
+      - 3001:3001
+
+  frontend-app:
+    image: frontend-app
+    build:
+      context: frontend
+      dockerfile: ./Dockerfile
+    environment:
+      REACT_APP_BACKEND_API: https://library-booking-backend-services.onrender.com/booking
+    ports:
+      - 3000:3000
