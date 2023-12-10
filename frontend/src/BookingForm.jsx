@@ -38,7 +38,7 @@ export default function BookingForm({ addItem }) {
     "Pod 8": "Hotel Room",
   };
 
-  const amendNric = (str) => {
+  const maskIdNum = (str) => {
     let firstChar = str.charAt(0);
     let subStr = str.substring(str.length - 4);
     let newStr = firstChar + "XXXX" + subStr;
@@ -79,7 +79,7 @@ export default function BookingForm({ addItem }) {
       bookingSchema
         .validate(formData)
         .then((validFormData) => {
-          validFormData.nricFin = amendNric(validFormData.nricFin);
+          validFormData.nricFin = maskIdNum(validFormData.nricFin);
           addItem(validFormData);
         })
         .catch((error) => {
