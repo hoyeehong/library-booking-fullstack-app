@@ -127,7 +127,7 @@ export default function BookingForm({ addItem }) {
           <Select
             required
             name="pod"
-            defaultValue=""
+            defaultValue={chosenDate}
             onChange={handleChange}
             label="Pod"
           >
